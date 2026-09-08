@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسالة خاصة لك 💕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #fff5f7 0%, #ffe0e6 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .container {
+            background: white;
+            border: 15px solid #ff69b4;
+            border-radius: 30px;
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 20px 60px rgba(255, 105, 180, 0.3);
+            animation: slideIn 0.6s ease-out;
+        }
+        
+        .emoji-container {
+            font-size: 80px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .emoji {
+            display: inline-block;
+            animation: bounce 1s ease-in-out infinite;
+        }
+        
+        .emoji:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+        
+        .emoji:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+        
+        .emoji:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+        
+        .emoji:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+        
+        h1 {
+            color: #ff1493;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.4);
+            font-family: Arial, sans-serif;
+        }
+        
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 105, 180, 0.6);
+        }
+        
+        .button:active {
+            transform: translateY(-1px);
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>انتظري قليل 💕</h1>
+        <div class="emoji-container">
+            <span class="emoji">🎀</span>
+            <span class="emoji">🎀</span>
+            <span class="emoji">🎀</span>
+            <span class="emoji">🎀</span>
+            <span class="emoji">🎀</span>
+        </div>
+        <button class="button" onclick="goToMessage()">ضغطي هنا بيبي</button>
+    </div>
+    
+    <script>
+        function goToMessage() {
+            window.location.href = 'message.html';
+        }
+    </script>
+</body>
+</html>
